@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Contacto</title>
+    <title>Contact</title>
     <link rel="stylesheet" href="style/style.css" />
     <!-- GOOGLE FONTs -->
     <link
@@ -27,52 +27,54 @@
   </head>
   <body>
     <div class="content">
-      <h1 class="logo">Ponte en <span>contacto</span></h1>
+      <h1 class="logo">Get in <span>Touch</span></h1>
 
       <div class="contact-wrapper animated bounceInUp">
         <div class="contact-form">
-          <h3>Contacto</h3>
-          <img src="public/icon.svg" alt="form-icon" width="50" id="banner" />
+          <h3>Contact</h3>
           <form action="">
             <p>
-              <label>Nombre Completo</label>
-              <input type="text" name="fullname" />
+              <label>Full Name</label>
+              <input type="text" name="fullname" id="fullname" />
             </p>
             <p>
-              <label>Correo Electrónico</label>
-              <input type="email" name="email" />
+              <label>Email Address</label>
+              <input type="email" name="email" id="email" />
             </p>
             <p>
-              <label>Número de Teléfono</label>
-              <input type="tel" name="phone" />
+              <label>Phone Number</label>
+              <input type="tel" name="phone" id="phone" />
             </p>
             <p>
-              <label>Asunto</label>
-              <input type="text" name="affair" />
+              <label>Subject</label>
+              <input type="text" name="affair" id="affair" />
             </p>
             <p class="block">
-              <label>Mensaje</label>
-              <textarea name="message" rows="3"></textarea>
+              <label>Message</label>
+              <textarea name="message" rows="3" id="message"></textarea>
             </p>
             <p class="block">
-              <button>Enviar</button>
+              <button onclick="sendEmail()">Send</button>
             </p>
           </form>
         </div>
         <div class="contact-info">
-          <h4>Más Información</h4>
+          <h4>More Information</h4>
           <ul>
-            <li><i class="fas fa-map-marker-alt"></i> Calle Baker</li>
-            <li><i class="fas fa-phone"></i> (111) 111 111 111</li>
             <li>
-              <i class="fas fa-envelope-open-text"></i> contacto@sitio.com
+              <i class="fas fa-map-marker-alt"></i> Costa Rica, P&eacute;rez
+              Zeled&oacute;n
+            </li>
+            <li>
+              <i class="fas fa-envelope-open-text"></i> darayaroma@gmail.com
             </li>
           </ul>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero
-            provident ipsam necessitatibus repellendus?
+            With over two years of experience in backend development and a solid
+            foundation in Systems Engineering, Database Administration, and
+            DevOps, I specialize in designing tailored information systems.
           </p>
-          <p>Empresa.com</p>
+          <a href="https://arayaroma.github.io">Home</a>
         </div>
       </div>
     </div>

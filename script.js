@@ -1,13 +1,36 @@
 function resetForm() {
-  // Select all input and textarea elements within the form
   const formInputs = document.querySelectorAll("form input, form textarea");
 
-  // Loop through each input and textarea element
   formInputs.forEach((input) => {
-    // Reset the value of each input and textarea to an empty string
     input.value = "";
   });
 }
 
-// Call resetForm function when the page loads
 window.onload = resetForm;
+
+function sendEmail() {
+  var fullname = document.getElementById("fullname").value;
+  var email = document.getElementById("email").value;
+  var phone = document.getElementById("phone").value;
+  var affair = document.getElementById("affair").value;
+  var message = document.getElementById("message").value;
+
+  var mailtoLink =
+    "mailto:darayaroma@gmail.com" +
+    "?subject=" +
+    encodeURIComponent(affair) +
+    "&body=" +
+    encodeURIComponent(
+      "Full Name: " +
+        fullname +
+        "\n" +
+        "Email: " +
+        email +
+        "\n" +
+        "Phone Number: " +
+        phone +
+        "\n\n" +
+        message
+    );
+  window.location.href = mailtoLink;
+}
